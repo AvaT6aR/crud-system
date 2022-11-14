@@ -1,0 +1,89 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/353838_code_html_web_icon.png" type="image/x-icon">
+    <title>Curd System</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <span id="scroll_top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </span>
+    <div class="container">
+        <h1>Product</h1>
+        <label for="productName">Product Name</label>
+        <input type="text" name="" id="productName" class="form-control">
+        <label for="productCateg">Product Categ</label>
+        <input type="text" name="" id="productCateg" class="form-control">
+        <label for="productDescription">Product Description</label>
+        <input type="text" name="" id="productDescription" class="form-control">
+        <div class="row">
+            <div class="col-6">
+                <label for="productPrice">Product Price</label>
+            </div>
+            <div class="col-6">
+                <label for="productDescription">Product Count</label>
+            </div>
+            <div class="col-6">
+                <input type="number" name="" id="productPrice" class="form-control">
+            </div>
+            <div class="col-6">
+                <input type="number" name="" id="productCount" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <label for="numder_delete" class="font-18">Number Delete</label>
+            </div>
+            <div class="col-6">
+                <input type="number" name="" id="numberDelete1" class="form-control" onkeyup="rp(this.value)" placeholder="هتمسح من ايدي كام؟">
+            </div>
+            <div class="col-6">
+                <input type="number" name="" id="numberDelete2" class="form-control" onkeyup="pr(this.value)" placeholder="عايز تمسح كام؟">
+            </div>
+        </div>
+
+        <button onclick="addproduct()" class="btn btn-info" id="submit">Add Product</button>
+        <button class="btn btn-danger" id="btnDelete" onclick="deleteall()">Delete All</button>
+        <button class="btn btn-success" onclick="deleteNumber()">Delete Number</button>
+        <input type="text"  name="" class="form-control mr-auto ml-auto w-50 mt-4" onkeyup="search(this.value)"  placeholder="Search...">
+        
+
+        <table class="table table-bordered text-center mt-4">
+            <thead class="bg-dark text-light">
+                <th>id</th>
+                <th>Product Name</th>
+                <th>Product Categ</th>
+                <th>Product Descriptio</th>
+                <th>Product Price</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="t_body">
+                
+            </tbody>
+            <tfoot class="text-left" id="t_foot">
+                
+            </tfoot>
+        </table>
+    </div>
+
+
+
+
+
+
+
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/all.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
