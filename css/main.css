@@ -1,47 +1,24 @@
 @import url(../css/animate.css);
 @import url(../css/bootstrap.min.css);
+@import url(../css/owl.carousel.min.css);
+@import url(../css/owl.theme.default.min.css);
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Poppins:wght@400;500;600&display=swap');
 body {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .02em;
     font-family: 'Poppins', sans-serif;
     background-color: teal;
     color: #fff;
 }
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-}
-.container {
-    max-width: 70%;
-}
-.form-control {
-    margin-bottom: 25px;
-    padding: 25px;
-    height: 0;
-    background-color: #154141;
-    color: #fff;
-    border-radius: 50px;
-    font-size: 18px;
-}
-.form-control:focus {
-    box-shadow: none;
-    background-color: #154141;
-    color: #fff;
-    border-color: #fff;
-    box-shadow: 0 0 0 5px rgba(10, 163, 171, 0.793);
-}
-.form-control::-webkit-input-placeholder {
-    color: #f1f1f1;
-    font-size: 18px;
-}
-.btn {
-    border-radius: 50px;
-    padding: 12px 20px !important;
-    font-size: 18px;
-}
 #scroll_top {
-    color: #ffff;
+    color: #000;
     position: fixed;
-    right: 20px;
+    right: 10px;
     z-index: 555;
     text-align: center;
     transition: all .3s ease-in-out;
@@ -49,30 +26,49 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     opacity: 0;
     cursor: pointer;
     bottom: 50px;
-    width: 50px;
-    height: 50.5px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: #dc3545;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#scroll_top:hover {
-    background-color: #c12030;
 }
 #scroll_top.active {
     visibility: visible;
     opacity: 1;
 }
-.table td , .table th {
+.btn {
+    border-radius: 50px;
+    padding: 15px 25px;
+}
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background-color: teal;
+    padding: 20px;
+    height: 0;
+    color: #fff;
+}
+.form-control:focus {
+    background-color: teal;
+    color: #fff;
+    box-shadow: 0 0 0 5px rgba(50, 122, 167, 0.543);
+    border: 1px solid #fff;
+}
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+.form-control::-webkit-inner-spin-button , .form-control::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.table td, .table th {
     vertical-align: middle;
 }
 .table td {
+    background-color: teal;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
 }
-.font-18 {
-    font-size: 18px;
-}
-
+ 
