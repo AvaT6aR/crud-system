@@ -157,7 +157,7 @@ function rp(avatar) {
     console.log(aavatar)
 }
 function pr(abdullah) {
-    aabdullah = Number(abdullah - avatar)
+    aabdullah = Number(abdullah - aavatar)
     console.log(aabdullah)
 }
 function deleteNumber(){
